@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 30 avr. 2026 à 12:28
+-- Généré le : lun. 04 mai 2026 à 12:25
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.2.0
 
@@ -154,14 +154,15 @@ CREATE TABLE IF NOT EXISTS `users` (
   `is_admin` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password_hash`, `site_id`, `is_admin`) VALUES
-(1, 'samuel.straub', '$2y$10$2SbVAVrpdiWJ0kUUaeAupuQXaUNs3ZT.ppXY5ikGUn4NURGE/oDd2', NULL, 1);
+(1, 'samuel.straub', '$2y$10$2SbVAVrpdiWJ0kUUaeAupuQXaUNs3ZT.ppXY5ikGUn4NURGE/oDd2', NULL, 1),
+(2, 'admin', '$2y$10$HfFWMNtoTX9vgA.5ioxZ2ejzEDnM22LNqqRX5yEqNNC/V1C9N04vq', NULL, 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
